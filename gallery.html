@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Title -->
+    <title>FINDIT</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="./img/core-img/favicon.png">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader"></div>
+    </div>
+    <!-- /Preloader -->
+
+    <!-- Top Search Form Area -->
+    <div class="top-search-area">
+        <div class="modal fade" id="searchModal" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <!-- Close -->
+                        <button type="button" class="btn close-btn" data-dismiss="modal"><i class="ti-close"></i></button>
+                        <!-- Form -->
+                        <form action="index.html" method="post">
+                            <input type="search" name="top-search-bar" class="form-control" placeholder="#태그">
+                            <button type="submit">검색</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header Area Start -->
+    <header class="header-area">
+        <!-- Main Header Start -->
+        <div class="main-header-area">
+            <div class="classy-nav-container breakpoint-off">
+                <div class="container">
+                    <!-- Classy Menu -->
+                    <nav class="classy-navbar justify-content-between" id="alimeNav">
+
+                        <!-- Logo -->
+                        <a class="nav-brand" href="./index.html"><img src="./img/core-img/logo.png" alt="로고이미지"></a>
+
+                        <!-- Navbar Toggler -->
+                        <div class="classy-navbar-toggler">
+                            <span class="navbarToggler"><span></span><span></span><span></span></span>
+                        </div>
+
+                        <!-- Menu -->
+                        <div class="classy-menu">
+                            <!-- Menu Close Button -->
+                            <div class="classycloseIcon">
+                                <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+                            </div>
+                            <!-- Nav Start -->
+                            <div class="classynav">
+                                <ul id="nav">
+                                    <li><a href="./index.html">HOME</a></li>
+                                    <li class="active"><a href="./gallery.html">GALLERY</a></li>
+                                    <li><a href="./gallery.html">LOOKBOOK</a></li>
+                                    <li><a href="./gallery.html">QnA</a></li>
+                                </ul>
+
+                                <!-- Search Icon -->
+                                <div class="search-icon" data-toggle="modal" data-target="#searchModal"><i class="ti-search"></i></div>
+                            </div>
+                            <!-- Nav End -->
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Header Area End -->
+
+    <!-- Breadcrumb Area Start -->
+    <section class="breadcrumb-area bg-img bg-overlay jarallax" style="background-image: url(img/bg-img/38.jpg);">
+        <div class="container h-100">
+            <div class="row h-100 align-items-center">
+                <div class="col-12">
+                    <div class="breadcrumb-content text-center">
+                        <h2 class="page-title">GALLERY</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Breadcrumb Area End -->
+
+    <!-- Gallery Area Start -->
+    <div class="alime-portfolio-area section-padding-80 clearfix">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <!-- Projects Menu -->
+                    <div class="alime-projects-menu wow fadeInUp" data-wow-delay="100ms">
+                        <div class="portfolio-menu text-center">
+                            <button class="btn active" data-filter="*">ALL</button>
+                            <button class="btn" data-filter=".jacket">#아우터</button>
+                            <button class="btn" data-filter=".iu">#아이유사복</button>
+                            <button class="btn" data-filter=".twice">#트와이스사복</button>
+                            <button class="btn" data-filter=".startUp">#스타트업수지</button>
+                            <button class="menu-more-btn">&middot;&middot;&middot;</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row alime-portfolio">
+                <!-- Single Gallery Item -->
+                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item startUp mb-30 wow fadeInUp" data-wow-delay="100ms">
+                    <div class="single-portfolio-content">
+                        <img src="img/bg-img/39.jpg" alt="스타트업수지이미지01">
+                        <div class="hover-content">
+                            <a href="#">+</a>
+                            <p>#스타트업수지가방 #브릭스 #스타트업수지</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Single Gallery Item -->
+                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item iu jacket mb-30 wow fadeInUp" data-wow-delay="300ms">
+                    <div class="single-portfolio-content">
+                        <img src="img/bg-img/40.jpg" alt="아이유사복이미지01">
+                        <div class="hover-content">
+                            <a href="sub-gallery-iu.html">+</a>
+                            <p>#아이유자켓 #이자벨마랑 #오피스룩 #아이유사복</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Single Gallery Item -->
+                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item jacket mb-30 wow fadeInUp" data-wow-delay="500ms">
+                    <div class="single-portfolio-content">
+                        <img src="img/bg-img/41.jpg" alt="정해인화보이미지">
+                        <div class="hover-content">
+                            <a href="#">+</a>
+                            <p>#정해인남친룩 #정해인플리스 #아우터 #코닥</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Single Gallery Item -->
+                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item twice mb-30 wow fadeInUp" data-wow-delay="700ms">
+                    <div class="single-portfolio-content">
+                        <img src="img/bg-img/42.jpg" alt="사나사복이미지01">
+                        <div class="hover-content">
+                            <a href="#">+</a>
+                            <p>#트와이스사나트레이닝복 #트와이스사복 #널디</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Single Gallery Item -->
+                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item jacket mb-30 wow fadeInUp" data-wow-delay="100ms">
+                    <div class="single-portfolio-content">
+                        <img src="img/bg-img/43.jpg" alt="배정남사복이미지">
+                        <div class="hover-content">
+                            <a href="#">+</a>
+                            <p>#배정남사복패션 #배정남플리스 #아우터 #다이나핏</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Single Gallery Item -->
+                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item iu mb-30 wow fadeInUp" data-wow-delay="300ms">
+                    <div class="single-portfolio-content">
+                        <img src="img/bg-img/44.jpg" alt="아이유사복이미지02">
+                        <div class="hover-content">
+                            <a href="#">+</a>
+                            <p>#아이유곱창밴드 #레트로패션 #아이유사복 #아모르윌트</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Single Gallery Item -->
+                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item twice mb-30 wow fadeInUp" data-wow-delay="500ms">
+                    <div class="single-portfolio-content">
+                        <img src="img/bg-img/45.jpg" alt="나연사복이미지01">
+                        <div class="hover-content">
+                            <a href="#">+</a>
+                            <p>#트와이스사복 #트와이스나연바지 #이자벨마랑</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Single Gallery Item -->
+                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item twice jacket mb-30 wow fadeInUp" data-wow-delay="700ms">
+                    <div class="single-portfolio-content">
+                        <img src="img/bg-img/46.jpg" alt="사나사복이미지02">
+                        <div class="hover-content">
+                            <a href="#">+</a>
+                            <p>트와이스사나사복 #트와이스사복 #아우터 #엔오르 #크롭자켓</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Single Gallery Item -->
+                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item startUp mb-30 wow fadeInUp" data-wow-delay="100ms">
+                    <div class="single-portfolio-content">
+                        <img src="img/bg-img/47.jpg" alt="스타트업수지이미지02">
+                        <div class="hover-content">
+                            <a href="#">+</a>
+                            <p>#스타트업수지 #스타트업수지블라우스 #케이트블룸</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Single Gallery Item -->
+                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item twice jacket mb-30 wow fadeInUp" data-wow-delay="300ms">
+                    <div class="single-portfolio-content">
+                        <img src="img/bg-img/48.jpg" alt="나연사복이미지02">
+                        <div class="hover-content">
+                            <a href="#">+</a>
+                            <p>#트와이스나연아우터 #아우터 #트와이스사복 #핀블랙</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Single Gallery Item -->
+                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item jacket mb-30 wow fadeInUp" data-wow-delay="500ms">
+                    <div class="single-portfolio-content">
+                        <img src="img/bg-img/49.jpg" alt="김동혁사복이미지">
+                        <div class="hover-content">
+                            <a href="#">+</a>
+                            <p>#IKON김동혁아우터 #플리스 #아우터 #MLB</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Single Gallery Item -->
+                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item iu mb-30 wow fadeInUp" data-wow-delay="700ms">
+                    <div class="single-portfolio-content">
+                        <img src="img/bg-img/50.jpg" alt="아이유사복이미지03">
+                        <div class="hover-content">
+                            <a href="#">+</a>
+                            <p>#아이유사복 #아이유가디건 #아우터 #이자벨마랑</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12 text-center wow fadeInUp" data-wow-delay="800ms">
+                    <a href="#" class="btn alime-btn btn-2 mt-15">MORE</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Gallery Area End -->
+
+    <!-- Follow Area Start -->
+    <div class="follow-area clearfix">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-heading text-center">
+                        <h2>HOT SNS</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Instagram Feed Area -->
+        <div class="instragram-feed-area owl-carousel">
+            <!-- Single Instagram Item -->
+            <div class="single-instagram-item">
+                <img src="img/bg-img/17.jpg" alt="태연인스타이미지">
+                <div class="instagram-hover-content text-center d-flex align-items-center justify-content-center">
+                    <a href="#">
+                        <i class="ti-instagram" aria-hidden="true"></i>
+                        <span>Taeyeon_ss</span>
+                    </a>
+                </div>
+            </div>
+            <!-- Single Instagram Item -->
+            <div class="single-instagram-item">
+                <img src="img/bg-img/18.jpg" alt="리사인스타이미지">
+                <div class="instagram-hover-content text-center d-flex align-items-center justify-content-center">
+                    <a href="#">
+                        <i class="ti-instagram" aria-hidden="true"></i>
+                        <span>lalalalisa_m</span>
+                    </a>
+                </div>
+            </div>
+            <!-- Single Instagram Item -->
+            <div class="single-instagram-item">
+                <img src="img/bg-img/19.jpg" alt="박서준인스타이미지">
+                <div class="instagram-hover-content text-center d-flex align-items-center justify-content-center">
+                    <a href="#">
+                        <i class="ti-instagram" aria-hidden="true"></i>
+                        <span>bn_sj2013</span>
+                    </a>
+                </div>
+            </div>
+            <!-- Single Instagram Item -->
+            <div class="single-instagram-item">
+                <img src="img/bg-img/20.jpg" alt="차은우인스타이미지">
+                <div class="instagram-hover-content text-center d-flex align-items-center justify-content-center">
+                    <a href="#">
+                        <i class="ti-instagram" aria-hidden="true"></i>
+                        <span>eunwo.o_c</span>
+                    </a>
+                </div>
+            </div>
+            <!-- Single Instagram Item -->
+            <div class="single-instagram-item">
+                <img src="img/bg-img/21.jpg" alt="서강준인스타이미지">
+                <div class="instagram-hover-content text-center d-flex align-items-center justify-content-center">
+                    <a href="#">
+                        <i class="ti-instagram" aria-hidden="true"></i>
+                        <span>seokj1012</span>
+                    </a>
+                </div>
+            </div>
+            <!-- Single Instagram Item -->
+            <div class="single-instagram-item">
+                <img src="img/bg-img/22.jpg" alt="제니인스타이미지">
+                <div class="instagram-hover-content text-center d-flex align-items-center justify-content-center">
+                    <a href="#">
+                        <i class="ti-instagram" aria-hidden="true"></i>
+                        <span>jennierubyjane</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Follow Area End -->
+
+    <!-- Footer Area Start -->
+    <footer class="footer-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="footer-content d-flex align-items-center justify-content-between">
+                        <!-- Copywrite Text -->
+                        <div class="copywrite-text">
+                            <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                            Copyright &copy;<script>document.write(new Date().getFullYear());</script> LEE YOUBIN | All rights reserved.
+                            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+                        </div>
+                        <!-- Footer Logo -->
+                        <div class="footer-logo">
+                            <a href="#"><img src="img/core-img/logo2.png" alt="로고이미지02"></a>
+                        </div>
+                        <!-- Social Info -->
+                        <div class="social-info">
+                            <a href="#"><i class="ti-facebook" aria-hidden="true"></i></a>
+                            <a href="#"><i class="ti-twitter-alt" aria-hidden="true"></i></a>
+                            <a href="#"><i class="ti-instagram" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Area End -->
+
+    <!-- **** All JS Files ***** -->
+    <!-- jQuery 2.2.4 -->
+    <script src="js/jquery.min.js"></script>
+    <!-- Popper -->
+    <script src="js/popper.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- All Plugins -->
+    <script src="js/alime.bundle.js"></script>
+    <!-- Active -->
+    <script src="js/default-assets/active.js"></script>
+
+</body>
+
+</html>
