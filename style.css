@@ -266,7 +266,11 @@ input:required {
 .section-padding-100-0 {
   padding-top: 100px;
   padding-bottom: 0; }
-
+  
+.section-padding-150-0 {
+  padding-top: 150px;
+  padding-bottom: 0; }
+  
 /* :: 3.0 Preloader CSS */
 #preloader {
   position: fixed;
