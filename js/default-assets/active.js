@@ -26,16 +26,14 @@
     // *********************************
 
     if ($.fn.owlCarousel) {
-        var welcomeSlider = $('.welcome-slides');
+        var welcomeSlider = $('.welcome-text');
         welcomeSlider.owlCarousel({
             items: 1,
-            loop: true,
-            autoplay: true,
-            smartSpeed: 1000,
-            autoplayTimeout: 10000,
-            nav: true,
-            navText: [('<i class="ti-arrow-left"></i>'), ('<i class="ti-arrow-right"></i>')]
-        })
+            loop: false,
+            autoplay: false,
+            nav: false,
+            navText: false
+        });
 
         welcomeSlider.on('translate.owl.carousel', function () {
             var layer = $("[data-animation]");
@@ -55,7 +53,7 @@
             $(this).css('animation-duration', anim_dur);
         });
 
-        welcomeSlider.on('translated.owl.carousel', function () {
+        alime_window.load('translated.owl.carousel', function () {
             var layer = welcomeSlider.find('.owl-item.active').find("[data-animation]");
             layer.each(function () {
                 var anim_name = $(this).data('animation');
